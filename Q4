@@ -1,0 +1,18 @@
+import math
+
+
+def lcm_gcd(x, y, z):
+    gcd2 = math.gcd(y, z)
+    gcd3 = math.gcd(x, gcd2)
+    print("The GCD Of three no Is",gcd3)
+
+    lcm2 = y * z // gcd2
+    lcm3 = x * lcm2 // gcd3
+    return lcm3
+
+
+
+x = int(input("Number 1: "))
+y = int(input("Number 2: "))
+z = int(input("Number 3: "))
+print("The LCM Of three no Is " + str(lcm_gcd(x, y, z)))
