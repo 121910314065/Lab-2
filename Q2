@@ -1,0 +1,10 @@
+x= int(input('Enter First number'))
+y = int(input('Enter Second number'))
+if x > y:
+       larger = x
+else:
+    larger = y
+if((larger % x == 0) and (larger% y == 0)):
+    lcm = larger
+    greater=+1
+print(lcm)
